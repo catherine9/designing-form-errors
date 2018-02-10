@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+  <head>
+    <meta charset="utf-8">
+    <title>Designing Form Errors</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/modules.css">
+    <link rel="stylesheet" href="css/type.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <form class="max-length island" method="post" action="#">
+      <div class="error-message error-message-highlighted push island-1-2" role="alert" aria-live="assertive">
+        <h3 class="push-0">
+      <div class="push-1-2">
+        <label for="name">Name</label>
+        <input id="name" required>
+      </div>
+
+      <div class="push-1-2">
+        <label for="email">Email</label>
+        <input type="email" id="email" required>
+      </div>
+
+      <div class="push-1-2">
+        <label for="url">Website <em class="flag-optional milli normal">(optional)
+        <input type="url" id="url">
+      </div>
+
+      <div class="push-1-2 pad-t-1-2">
+        <input type="checkbox" id="agree" required>
+        <label for="agree">I'm totally awesome!</label>
+      </div>
+    </form>
+
+    <div class="pad-t-1-2">
+      <button class="btn" type="submit">Send</button>
+    </div>
+  </body>
+</html>
